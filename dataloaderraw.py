@@ -29,7 +29,7 @@ class DataLoaderRaw():
     def __init__(self, opt):
         self.opt = opt
         self.coco_json = opt.get('coco_json', '')
-        self.folder_path = opt.get('folder_path', '')
+        self.folder_path = os.path.expanduser(opt.get('folder_path', ''))
 
         self.batch_size = opt.get('batch_size', 1)
         self.seq_per_img = 1

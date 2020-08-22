@@ -1,15 +1,20 @@
 # ImageCaptioning.pytorch
 
-This is a fork of [Rotian Luo's ImageCaptioning repo](https://github.com/ruotianluo/ImageCaptioning.pytorch), adapted for the Deep Learning with PyTorch book (Manning).
+This is a fork of [Deep Learning with Pytorch's ImageCaptioning repo](https://github.com/deep-learning-with-pytorch/ImageCaptioning.pytorch), which is a fork of [Rotian Luo's ImageCaptioning repo](https://github.com/ruotianluo/ImageCaptioning.pytorch), adapted for the Deep Learning with PyTorch book (Manning).
 
 Notable changes:
 
-* Python 3.6+
-* PyTorch 1.3+
-* CPU and GPU support
-* a set of weights is provided in the repo to facilitate getting up to speed
+* Fix an error of loading the infos pickle files on Windows.
+* Allow using `~` in the model and infos file names.
 
 Following are the original notes.
+
+Notable changes:
+
+Python 3.6+
+PyTorch 1.3+
+CPU and GPU support
+a set of weights is provided in the repo to facilitate getting up to speed
 
 # ImageCaptioning.pytorch
 

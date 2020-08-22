@@ -85,7 +85,22 @@ if not os.path.isfile(cnn_model_weights):
             shutil.copyfileobj(source, destination)
 
 # Load infos
-with open(opt.infos_path, 'rb') as f:
+destination = opt.infos_path.replace('.pkl', '_win.pkl')
+
+content = ''
+outsize = 0
+with open(opt.infos_path, 'rb') as infile:
+    
+    content = infile.read()
+with open(destination, 'wb') as output:
+    
+    for line in content.splitlines():
+        outsize += len(line) + 1
+        output.write(line + str.encode('\n'))
+
+print("Done. Saved %s bytes." % (len(content)-outsize))
+
+with open(destination, 'rb') as f:
     infos = cPickle.load(f, encoding='latin1')
 
 # override and collect parameters
