@@ -11,10 +11,10 @@ Following are the original notes.
 
 Notable changes:
 
-Python 3.6+
-PyTorch 1.3+
-CPU and GPU support
-a set of weights is provided in the repo to facilitate getting up to speed
+* Python 3.6+
+* PyTorch 1.3+
+* CPU and GPU support
+* a set of weights is provided in the repo to facilitate getting up to speed
 
 # ImageCaptioning.pytorch
 
